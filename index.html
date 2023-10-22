@@ -6,37 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/1f75ceeb7f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="sidebar">
+    <nav>
         <div class="dash">
-            <i class="fa-solid fa-table-cells-large" style="color: white;"></i>
+            <img src="view-dashboard.svg" alt="rectangle shapes" class="dashb">
             <h1>Dashboard</h1>
         </div>
-            <i class="fa-solid fa-house" style="color: white;"></i>
-            <h1>Home</h1>
-            <i class="fa-solid fa-address-card" style="color: white;"></i>
-            <h1>Profile</h1>
-            <i class="fa-solid fa-message" style="color: white;"></i>
-            <h1>Messages</h1>
-            <i class="fa-solid fa-clock-rotate-left" style="color: white;"></i>
-            <h1>History</h1>
-            <i class="fa-solid fa-clipboard-list" style="color: white;"></i>
-            <h1>Tasks</h1>
-            <i class="fa-solid fa-people-group" style="color: white;"></i>
-            <h1>Communities</h1>
-            <i class="fa-solid fa-gear" style="color: white;"></i>
-            <h1>Settings</h1>
-            <i class="fa-solid fa-question" style="color: white;"></i>
-            <h1>Support</h1>
-            <i class="fa-solid fa-shield" style="color: white;"></i>
-            <h1>Privacy</h1>
-    </div>
+        <div class="list">
+            <div class="icons">
+                <i class="fa-solid fa-house" style="color: white;"></i>
+                <h1>Home</h1>
+            </div>
+        </div>
+        <div class="list">
+            <div class="icons">
+                <i class="fa-solid fa-address-card" style="color: white;"></i>
+                <h1>Profile</h1>
+            </div>
+        </div>
+        <div class="list">
+            <div class="icons">
+                <i class="fa-solid fa-message" style="color: white;"></i>
+                <h1>Messages</h1>
+            </div>
+        </div>
+        <div class="list">
+            <div class="icons">
+                <i class="fa-solid fa-clock-rotate-left" style="color: white;"></i>
+                <h1>History</h1>
+            </div>
+        </div>
+        <div class="list">
+            <div class="icons">
+                <i class="fa-solid fa-clipboard-list" style="color: white;"></i>
+                <h1>Tasks</h1>
+            </div>
+        </div>
+        <div class="list">
+            <div class="icons">
+                <i class="fa-solid fa-people-group" style="color: white;"></i>
+                <h1>Communities</h1>
+            </div>
+        </div>
+        <div class="list-bottom">
+            <div class="list">
+                <div class="icons">
+                    <i class="fa-solid fa-gear" style="color: white;"></i>
+                    <h1>Settings</h1>
+                </div>
+            </div>
+            <div class="list">
+                <div class="icons">
+                    <i class="fa-solid fa-question" style="color: white;"></i>
+                    <h1>Support</h1>
+                </div>
+            </div>
+            <div class="list">
+                <div class="icons">
+                    <i class="fa-solid fa-shield" style="color: white;"></i>
+                    <h1>Privacy</h1>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <div class="header">
         <div class="top">
@@ -52,25 +90,25 @@
                 <div class="bell">
                     <i class="fa-solid fa-bell" style="color: white;"></i>
                 </div>
-                    <img src="black.jpg" alt="person avatar with black hair" class="avatarSmall">
+                <img src="black.jpg" alt="person avatar with black hair" class="avatarSmall">
                 <p class="userName">Britteany Duffus</p>
             </div>
         </div>
         <div class="bottom">
             <div class="profile">
-                    <img src="black.jpg" alt="person avatar with black hair" class="avatar">
-                </div>
-                <div class="profileName">
-                    <p class="greeting">Hi there,</p>
-                    <p class="greetingName">Britteany Duffus (@Britteany)</p>
-                </div>
+                <img src="black.jpg" alt="person avatar with black hair" class="avatar">
             </div>
-            <div class="buttons">
-                <button class="btn">New</button>
-                <button class="btn">Upload</button>
-                <button class="btn">Share</button>
+            <div class="profileName">
+                <p class="greeting">Hi there,</p>
+                <p class="greetingName">Britteany Duffus (@Britteany)</p>
             </div>
         </div>
+        <div class="buttons">
+            <button class="btn">New</button>
+            <button class="btn">Upload</button>
+            <button class="btn">Share</button>
+        </div>
+    </div>
     </div>
 
     <div class="main">
@@ -154,8 +192,8 @@
             <ul class="info">
                 <li class="announcements">
                     <h5 class="site">Site Maintenance</h5>
-                    <p class="siteText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis 
-                        quisquam minima, eveniet maxime id, corporis distinctio quos atque, laboriosam quibusdam 
+                    <p class="siteText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                        quisquam minima, eveniet maxime id, corporis distinctio quos atque, laboriosam quibusdam
                         beatae hic doloribus doloremque natus recusandae voluptates reiciendis nostrum. Culpa.
                     </p>
                 </li>
@@ -163,8 +201,8 @@
             <ul class="info">
                 <li class="announcements">
                     <h5 class="site">Community Share Day</h5>
-                    <p class="siteText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis 
-                        quisquam minima, eveniet maxime id, corporis distinctio quos atque, laboriosam quibusdam 
+                    <p class="siteText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                        quisquam minima, eveniet maxime id, corporis distinctio quos atque, laboriosam quibusdam
                         beatae hic doloribus doloremque natus recusandae voluptates reiciendis nostrum. Culpa.
                     </p>
                 </li>
@@ -172,8 +210,8 @@
             <ul class="info">
                 <li class="announcements">
                     <h5 class="site">Updated Privacy Policy</h5>
-                    <p class="siteText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis 
-                        quisquam minima, eveniet maxime id, corporis distinctio quos atque, laboriosam quibusdam 
+                    <p class="siteText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                        quisquam minima, eveniet maxime id, corporis distinctio quos atque, laboriosam quibusdam
                         beatae hic doloribus doloremque natus recusandae voluptates reiciendis nostrum. Culpa.
                     </p>
                 </li>
