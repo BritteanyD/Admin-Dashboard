@@ -1,27 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
-    font-family: 'Playfair Display', 'Roboto', serif, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     display: grid;
-    grid-template-columns: 18% 82%;
-    height: 100vh;
+    grid-template-columns: 20% 80%;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 20% 80%;
+    height:100vh;
 }
 
 .avatar {
-    max-width: 5%;
-    max-height: 5%;
+    width: 75px;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+.avatar-top {
+    margin: 0 20px;
+    width: 50px;
     border-radius: 50%;
 }
 
 .avatarSmall {
-    max-width: 3%;
-    max-height: 3%;
+    width: 50px;
     border-radius: 50%;
 }
 
 nav {
-    grid-row: 1/3;
     background-color: #6f42c1;
     height: 100vh;
 }
@@ -37,12 +51,12 @@ nav {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin: 40px 4px;
-    gap: 20px;
+    margin: 40px 40px;
   }
 
   .dash h1 {
     font-size: 25px;
+    margin-left: 20px;
     color: white
   }
 
@@ -51,178 +65,74 @@ nav {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin: 20px 4px;
+    margin: 20px 40px;
     color: white;
   }
 
   .list-bottom {
     margin-top: 50px;
-
   }
 
   .icons {
     display: flex;
-    margin-left: 30px;
-    font-size: 16px;
-    font-weight: 700;
+    margin-left: 10px;
+    font-size: 14px;
     gap: 20px;
   }
 
-.header {
-    display: grid;
-    background-color: rgb(184, 184, 184);
+  .header {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+
+  .top, .bottom, .profile-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 20px;
+  }
+
+  .bottom {
+    justify-content: space-between;
+  }
+
+  .input {
+    width: 500px;
+    height: 20px;
+    background-color: #e2e8f0;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    margin-left: 20px;
+    margin-right: 200px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    margin-right: 20px;
+  }
+
+.btn {
+    background-color: #6f42c1;
+    width: 70px;
+    height: 35px;
+    color: white;
+    border: 1px solid #6f42c1;
+    border-radius: 20px;
 }
 
-.main {
+.content {
     display: grid;
-    background-color: #d3d3d3;
-    height: 100vw;
-    width: 100vw;
+    background-color: #e2e8f0;
+    height: 100 vh;
 }
 
 .smile,
 .smile2,
 .actions {
-    color: white;
-}
-
-
-
-
-
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
+    color: #00cccc;
 }
