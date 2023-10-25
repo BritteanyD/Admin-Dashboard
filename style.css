@@ -9,7 +9,7 @@
 
 body {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 16% 84%;
 }
 
 .main {
@@ -92,11 +92,12 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     margin: 5px 20px;
 }
 
 .bottom {
-    justify-content: space-between;
+    gap: 737px;
 }
 
 .input {
@@ -106,7 +107,7 @@ nav {
     border-radius: 16px;
     border: 1px solid #e2e8f0;
     margin-left: 20px;
-    margin-right: 200px;
+    margin-right: 130px;
 }
 
 .buttons {
@@ -120,16 +121,17 @@ nav {
 
 .btn {
     background-color: #6f42c1;
-    width: 70px;
+    width: 90px;
     height: 35px;
     color: white;
+    font-weight: bold;
     border: 1px solid #6f42c1;
-    border-radius: 20px;
+    border-radius: 40px;
 }
 
 .content {
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 80% 20%;
     background-color: #e2e8f0;
 }
 
@@ -145,10 +147,10 @@ nav {
     align-items: flex-start;
     padding-left: 10px;
     background-color: white;
-    border-left: 5px solid #00cccc;
+    border-left: 7px solid #00cccc;
     border-radius: 10px;
-    width: 70%;
-    height: 170px;
+    width: 92%;
+    height: 180px;
     margin: 15px 0;
     margin-left: 20px;
 }
@@ -177,6 +179,10 @@ h4 {
     margin: 10px 0;
 }
 
+.ann h4, .trend h4 {
+    margin-bottom: 10px;
+}
+
 .ann-trend {
     display: grid;
     grid-template-rows: 50% 50%;
@@ -184,7 +190,7 @@ h4 {
 }
 
 .ann-card, .trend-card {
-    height: 80%;
+    height: 79%;
     width: 80%;
     background-color: white;
     border-radius: 5px;
@@ -195,7 +201,7 @@ h4 {
 }
 
 .ann-text {
-    padding: 10px 15px;
+    padding: 12px 15px;
 }
 
 .ann-text p, .trend-text p{
@@ -204,7 +210,7 @@ h4 {
 }
 
 .divider {
-    margin-left: 35px;
+    margin-left: 20px;
     border: 0.5px solid grey;
     width: 80%;
 }
